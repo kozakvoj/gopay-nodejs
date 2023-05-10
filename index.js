@@ -338,7 +338,7 @@ module.exports.GoPay = /** @class */ (function () {
                             return [2 /*return*/, 'Error: Missing token'];
                         settings = {
                             method: 'POST',
-                            uri: this.apiUrl + "/payments/payment/" + id,
+                            uri: this.apiUrl + "/payments/payment/" + id + "/refund",
                             headers: {
                                 'Accept': 'application/json',
                                 'Content-Type': 'application/x-www-form-urlencoded',
